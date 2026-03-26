@@ -934,5 +934,20 @@
             });
         });
     </script>
+    <script>
+function toggleInfo(event, btn) {
+    event.preventDefault();
+
+    const info = btn.nextElementSibling;
+
+    if (info.style.display === "block") {
+        info.style.display = "none";
+        btn.textContent = "Más información aquí";
+    } else {
+        info.style.display = "block";
+        btn.textContent = "Ocultar información";
+    }
+}
+</script>
 </body>
 </html>
